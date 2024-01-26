@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body form {
+    display: flex;
+    margin-bottom: 15rem;
+    margin-right: 5rem;
+    position: relative; /* Set position relative for the form */
+}
+
+.searchWrapper input {
+    font-size: 24px;
+    padding: 10px 15px;
+    border: 0.5px solid grey;
+    outline: none;
+    width: 100%;
+}
+
+.autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 79.2%;
+}
+
+.autocomplete button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+    border: 0.5px solid grey;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.autocomplete button:active {
+    background-color: whitesmoke;
+}
+
+.autocomplete li {
+    list-style: none;
+}
+
+.btn-submit {
+    width: 90px;
+    max-height: 50px;
+    background-color: hsl(203, 85%, 54%);
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-submit:active {
+    background-color: hsl(203, 100%, 74%);
+}
+
+.pokemonChar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    width: 700px;
+    height: 600px;
+    border-radius: 20px;
+    border: 7px solid hsl(203, 85%, 54%);
+}
+
+.pokemonChar h1 {
+    background-color: rgba(164, 208, 250, 0.521);
+    width: 100%;
+    margin-bottom: 6rem;
+    color: rgb(2, 2, 2);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.pokemonChar img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 4rem;
+}
